@@ -1,9 +1,13 @@
 import Image from 'next/image'
+import Thumbnails from './components/Thumbnails'
 
 export default function Home() {
   return (
     <main>
-      <h2>Dashboard</h2>
+      <main>
+      <Thumbnails />
+        
+      </main>
     </main>
   )
 }
