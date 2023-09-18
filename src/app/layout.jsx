@@ -1,13 +1,13 @@
 import './globals.css'
-import { Inter, Rubik } from 'next/font/google'
+import { Inter, Rubik, Poppins } from 'next/font/google'
 
 // Components
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 
 
-
-const rubik = Rubik({ subsets: ['latin'] })
+const poppins = Poppins({ subsets: ['latin'], weight: '400' })
 
 export const metadata = {
   title: 'Dean Ver Tinio Portfolio',
@@ -17,11 +17,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={rubik.className}>
+      <body className={poppins.className}>
         
         <Navbar/>
         {children}
-        </body>
+      </body>
+      <Footer />
+      
     </html>
   )
 }
