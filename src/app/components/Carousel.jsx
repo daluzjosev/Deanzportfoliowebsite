@@ -1,12 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
-import thumbnail1 from './thumbnail1.jpg'
 
 
 export default function Carousel() {
   return (
     <div className='flex flex-wrap justify-center'>
-        <div className="w-full md:w-1/2 lg:w-1/4 p-2 my-5 flex justify-center">
+        {/* <div className="w-full md:w-1/2 lg:w-1/4 p-2 my-5 flex justify-center">
             <Image 
                 src={thumbnail1}
                 alt="pic1"
@@ -39,7 +38,7 @@ export default function Carousel() {
                 placeholder="blur"
             />
         </div>
-         
+          */}
     </div>
   )
 }

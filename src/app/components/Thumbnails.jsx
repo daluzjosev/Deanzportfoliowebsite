@@ -1,118 +1,24 @@
-import React from 'react'
-import thumbnail1 from './thumbnail1.jpg'
-import Image from 'next/image'
+'use client'
+import React, { useState, useEffect } from 'react'
+import videoData from '/_data/db.json'
+import Link from 'next/link'
+import Thumbnail from './Thumbnail'
 
 export default function Thumbnails() {
+  const [videos, setVideos] = useState([]);
+
+  useEffect(() => {
+    setVideos(videoData.videos);
+  }, []);
+
   return (
-    <div className="card-container">
-        <div className="card">
-            <Image 
-                src={thumbnail1}
-                alt="thumbnail 1"
-                sizes='max'
-                quality= {100}
-                placeholder='blur'
-            />
-        </div>
-        <div className="card">
-            <Image 
-                src={thumbnail1}
-                alt="thumbnail 1"
-                width = {2000}
-                quality= {100}
-                placeholder='blur'
-            />
-        </div>
-        <div className="card">
-            <Image 
-                src={thumbnail1}
-                alt="thumbnail 1"
-                width = {500}
-                quality= {100}
-                placeholder='blur'
-            />
-        </div>
-        <div className="card">
-            <Image 
-                src={thumbnail1}
-                alt="thumbnail 1"
-                sizes='max'
-                quality= {100}
-                placeholder='blur'
-            />
-        </div>
-        <div className="card">
-            <Image 
-                src={thumbnail1}
-                alt="thumbnail 1"
-                width = {500}
-                quality= {100}
-                placeholder='blur'
-            />
-        </div>
-        <div className="card">
-            <Image 
-                src={thumbnail1}
-                alt="thumbnail 1"
-                width = {500}
-                quality= {100}
-                placeholder='blur'
-            />
-        </div>
-        <div className="card">
-            <Image 
-                src={thumbnail1}
-                alt="thumbnail 1"
-                sizes='max'
-                quality= {100}
-                placeholder='blur'
-            />
-        </div>
-        <div className="card">
-            <Image 
-                src={thumbnail1}
-                alt="thumbnail 1"
-                width = {2000}
-                quality= {100}
-                placeholder='blur'
-            />
-        </div>
-        <div className="card">
-            <Image 
-                src={thumbnail1}
-                alt="thumbnail 1"
-                width = {500}
-                quality= {100}
-                placeholder='blur'
-            />
-        </div>
-        <div className="card">
-            <Image 
-                src={thumbnail1}
-                alt="thumbnail 1"
-                sizes='max'
-                quality= {100}
-                placeholder='blur'
-            />
-        </div>
-        <div className="card">
-            <Image 
-                src={thumbnail1}
-                alt="thumbnail 1"
-                width = {500}
-                quality= {100}
-                placeholder='blur'
-            />
-        </div>
-        <div className="card">
-            <Image 
-                src={thumbnail1}
-                alt="thumbnail 1"
-                width = {500}
-                quality= {100}
-                placeholder='blur'
-            />
-        </div>
-  </div>
-  )
+    <div className='card-container'>
+      {videos.map(video => (
+        <Link key={video.id} href={`/Video/${video.id}`}>
+            <Thumbnail video={video} />
+        </Link>
+      ))}
+    </div>
+  );
+ 
 }

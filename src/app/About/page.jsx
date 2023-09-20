@@ -1,5 +1,6 @@
 import React from 'react'
 import Carousel from '../components/Carousel'
+import Image from 'next/image'
 
 export default function About() {
   return (
@@ -11,18 +12,18 @@ export default function About() {
 
         <div className='text-justify'>
           <div className=' py-5'>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo ullam, adipisci voluptate provident consequuntur possimus aut aliquid eveniet, corporis eos voluptatum a delectus voluptatem, dicta voluptatibus rem explicabo laudantium.
-            Voluptates sequi obcaecati ipsum necessitatibus, error eligendi doloremque autem sapiente? Ipsa, quod, unde placeat voluptates, pariatur odit ab iure quidem dignissimos obcaecati exercitationem soluta quas cumque rerum suscipit corrupti non?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nemo ullam, adipisci voluptate provident consequuntur possimus aut aliquid eveniet, corporis eos voluptatum a delectus voluptatem, dicta voluptatibus rem explicabo laudantium.
+            <p className='text-center'>
+
+              Dean Ver Tinio is a visionary editor of digital post-production content. 
+
+              He has worked with various type of content in the digital entertainment industry.
+
 
           </p> 
             <br />
-            <p>
-            Voluptates sequi obcaecati ipsum necessitatibus, error eligendi doloremque autem sapiente? Ipsa, quod, unde placeat voluptates, pariatur odit ab iure quidem dignissimos obcaecati exercitationem soluta quas cumque rerum suscipit corrupti non?
-          Voluptates sequi obcaecati ipsum necessitatibus, error eligendi doloremque autem sapiente? Ipsa, quod, unde placeat voluptates, pariatur odit ab iure quidem dignissimos obcaecati exercitationem soluta quas cumque rerum suscipit corrupti non?
-
+            <p className='text-center'>
+              He worked with multiple youtube celebrities and big branded esports organizations with the likes of
             </p>
-
           </div>
           <div className='py-5 text-center'>
             <h2 className='m-5'>some quote here</h2>

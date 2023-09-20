@@ -8,7 +8,7 @@ body {
   @apply text-gray-500 m-6;
 }
 
-h1,
+npmh1,
 h2 {
   @apply font-bold text-white text-lg text-center;
 }
@@ -25,11 +25,11 @@ p > a {
 /* nav styles */
 
 nav {
-  @apply pb-4
+  @apply pb-6
     border-b-2 border-gray-200
     flex justify-between items-center gap-5 
     my-10 mx-auto 
-    max-w-5xl;
+    max-w-6xl;
 }
 nav a,
 nav span {
@@ -62,7 +62,7 @@ button:hover {
 /* card styles */
 
 .card-container {
-  @apply flex gap-1 justify-normal flex-wrap justify-center;
+  @apply flex gap-1 justify-normal flex-wrap justify-center mx-20;
 }
 
 .card {
@@ -73,6 +73,9 @@ button:hover {
     relative 
     overflow-hidden
     flex-nowrap;
+}
+.card:hover {
+  @apply bg-pink-500;
 }
 .card h3 {
   @apply font-bold text-gray-700 text-sm 
