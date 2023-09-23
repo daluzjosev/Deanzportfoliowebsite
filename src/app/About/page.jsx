@@ -1,6 +1,5 @@
 import React from 'react'
 import Selfie from '@/app/components/Selfie'
-import Contactlist from '../components/Contactlist'
 
 export default function About() {
   return (
