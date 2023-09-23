@@ -13,12 +13,12 @@ export default function About() {
           <div className=' py-5'>
             <p className='text-center italic'>
 
-              "Dean Ver Tinio is a visionary editor of digital post-production content." 
+              {"Dean Ver Tinio is a visionary editor of digital post-production content." }
 
           </p> 
             <br />
             <p className='text-center'>
-            He's been in the digital entertainment world, working with all kinds of content. He's teamed up with YouTube stars and big esports names like TSM (Team Solo Mid) and PRX. His specialty? Making fun videos and doing cool 3D stuff. He's a video pro who takes big ideas and turns them into awesome visuals.
+            {"He's been in the digital entertainment world, working with all kinds of content. He's teamed up with YouTube stars and big esports names like TSM (Team Solo Mid) and PRX. His specialty? Making fun videos and doing cool 3D stuff. He's a video pro who takes big ideas and turns them into awesome visuals."}
             </p>
           </div>
           <div className='py-5 text-center'>
