@@ -1,5 +1,6 @@
 import './globals.css'
 import { Inter, Rubik, Poppins } from 'next/font/google'
+// made by Jose Daluz. daluzjosev@gmail.com
 
 // Components
 import Navbar from './components/Navbar'

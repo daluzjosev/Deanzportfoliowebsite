@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@media screen and (max-width: 1200px) {
+  .left,
+  .main,
+  .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
 /* base styles */
 body {
   background: #000000;
@@ -62,7 +69,7 @@ button:hover {
 /* card styles */
 
 .card-container {
-  @apply flex gap-1 justify-normal flex-wrap justify-center mx-20;
+  @apply flex gap-1 flex-wrap justify-center mx-20;
 }
 
 .card {
@@ -72,15 +79,7 @@ button:hover {
     p-0 m-0
     relative 
     overflow-hidden
-    flex-nowrap;
-}
-.card:hover {
-  @apply bg-pink-500;
-}
-.card h3 {
-  @apply font-bold text-gray-700 text-sm 
-    mb-0;
-}
-.card p {
-  @apply my-4 text-sm leading-6;
+    flex-nowrap
+
+    ease-in-out;
 }

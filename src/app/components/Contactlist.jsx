@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Contactlist() {
   return (
-    <div className='flex gap-5'>
+    <div className='flex gap-5 justify-center'>
         <li>
             <a target='_blank' href="https://twitter.com/iamdeanzz">
                 <svg

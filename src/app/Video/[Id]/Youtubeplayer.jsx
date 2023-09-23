@@ -18,8 +18,8 @@ export default function Youtubeplayer() {
     return <div><h2>Video not found</h2></div>
   }
   return  (
-    <div className='card-container my-5'>
-      <h2 className='m-5 basis-full'>{video.title}</h2>
+    <div className=''>
+      <h2 className='basis-full'>{video.title}</h2>
       <YoutubeEmbed embedId={video.id} />
     </div>
   )

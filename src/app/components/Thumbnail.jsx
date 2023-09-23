@@ -3,13 +3,27 @@ import Image from 'next/image'
 
 export default function Thumbnail({ video }) {
   return (
-    <div className="card group block max-w-xs mx-auto p-6 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
-        <Image 
-        src={video.thumbnailUrl}
-        alt={video.title} 
-        width={500}
-        height={250}
-        />
-  </div>
+    <>
+      <div className=" text-center flex  relative group card group block max-w-xs mx-auto p-6 shadow-lg ">
+          <Image 
+          className='
+          group-hover:blur-[2px] duration-300
+          group-hover:grayscale-[50%]
+          '
+          src={video.thumbnailUrl}
+          alt={video.title} 
+          width={500}
+          height={250}
+          />
+            <div className="bg-rose-600  bg-opacity-50 h-[100%] duration-500 opacity-0 absolute left-0 right-0 bottom-0 text-white group-hover:opacity-100">
+
+              <span className='p-5 '><p className='p-5 text-lg'><br></br>{video.title}</p>
+              </span>
+          </div>
+      
+      </div>
+      
+    </>
+    
   )
 }

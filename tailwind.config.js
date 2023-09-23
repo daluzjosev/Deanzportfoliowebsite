@@ -15,6 +15,8 @@ module.exports = {
         '128': '32rem',
       }
     },
+    grayscale: {
+      50: '50%',
+    }
   },
-  plugins: [],
 }
