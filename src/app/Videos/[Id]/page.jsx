@@ -26,8 +26,11 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context) {
+  const videos = videoData.videos;
 
   return {
-    props: {},
+    props: {
+      videos,
+    },
   };
 }
