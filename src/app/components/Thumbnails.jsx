@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import videoData from '/_data/db.json'
 import Thumbnail from './Thumbnail'
+import Link from 'next/link'
 
 export default function Thumbnails() {
   const [videos, setVideos] = useState([]);
@@ -13,9 +14,9 @@ export default function Thumbnails() {
   return (
     <div className='card-container'>
       {videos.map(video => (
-        <a key={video.id} href={`/${video.id}`}>
+        <Link key={video.id} href={`@/app/${video.id}`}>
             <Thumbnail video={video} />
-        </a>
+        </Link>
       ))}
     </div>
   );
