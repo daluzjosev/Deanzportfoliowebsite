@@ -14,7 +14,7 @@ export default function Thumbnails() {
   return (
     <div className='card-container'>
       {videos.map(video => (
-        <Link key={video.id} href={`/Video/${video.id}`}>
+        <Link key={video.id} href={`/${video.id}`}>
             <Thumbnail video={video} />
         </Link>
       ))}
