@@ -1,6 +1,6 @@
 import React from 'react'
 import Thumbnails from '@/app/components/Thumbnails'
-import Youtubeplayer from './Youtubeplayer'
+import Youtubeplayer from '../Youtubeplayer'
 
 
 
