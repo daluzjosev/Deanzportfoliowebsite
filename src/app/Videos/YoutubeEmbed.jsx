@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 
 const YoutubeEmbed = ({ embedId }) => (
   <main className='flex justify-center'>
@@ -18,8 +17,6 @@ const YoutubeEmbed = ({ embedId }) => (
   </main>
 );
 
-YoutubeEmbed.propTypes = {
-  embedId: PropTypes.string.isRequired
-};
+
 
 export default YoutubeEmbed;
