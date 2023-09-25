@@ -1,7 +1,6 @@
 import React from 'react'
 import Thumbnails from '@/app/components/Thumbnails'
 import Youtubeplayer from './Youtubeplayer'
-import videoData from '/_data/db.json'
 
 
 
@@ -13,15 +12,3 @@ export default function page() {
     </>
   )
 }
-
-export async function getStaticPaths() {
-  const videos = videoData.videos
-  const paths = videos.map(({ id }) => ({ params: { id }}))
-
-  return {
-    paths,
-
-    fallback: true,
-  };
-}
-
