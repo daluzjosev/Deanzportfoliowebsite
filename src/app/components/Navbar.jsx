@@ -11,7 +11,7 @@ export default function Navbar() {
         <div className='flex'>
         <Link href={"/"}> <h1 className='text-5xl nav-title'>Dean Ver Tinio</h1></Link>
         </div>
-        <Link href={"/"}><Image className='nav-logo pl-2' src="Deanzportfoliowebsite/apple-touch-icon.png " width={60} height={60} alt="icon" /></Link>
+        <Link href={"/"}><Image className='nav-logo pl-2' src="/Deanzportfoliowebsite/images/android-chrome-512x512.png" width={60} height={60} alt="icon" /></Link>
         <Navlinks />
     </nav>
   )
