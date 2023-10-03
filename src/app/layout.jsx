@@ -5,6 +5,7 @@ import { Inter, Rubik, Poppins } from 'next/font/google'
 // Components
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import Contactlist from './components/Contactlist'
 
 
 
@@ -18,13 +19,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+    
       <body className={poppins.className}>
-        
-        <Navbar/>
+          <Navbar/>
 
-        {children}
-        
-        <Footer />
+          {children}
+          
+
+          <div className='flex justify-center m-5 pr-5'>
+            <ul className='space-y-4 '>
+              <Contactlist />
+
+            </ul>
+          </div>
+          <Footer />
 
       </body>
     </html>

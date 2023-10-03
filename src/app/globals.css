@@ -9,18 +9,41 @@
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
   }
 }
+
+@media screen and (min-width: 768px) {
+  /* Add styles for larger screens here */
+  .nav-link {
+    font-size: 24px; /* Set the font size for desktop */
+  }
+  .nav-logo {
+    display: none; /* Hide the icon for desktop */
+  }
+  .mobile-nav {
+    display: none; /* Hide the icon for desktop */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* Add styles for smaller screens here */
+  .nav-link {
+    display: none; /* Hide the text for mobile */
+  }
+  .nav-title {
+    display: none; /* Hide the text for mobile */
+  }
+  .nav-logo {
+    display: inline-block; /* Display the icon for mobile */
+  }
+}
+
 /* base styles */
 body {
   background: #000000;
-  @apply text-gray-500 m-6;
+  @apply text-gray-500 m-5;
 }
 
-npmh1,
-h2 {
-  @apply font-bold text-white text-lg text-center;
-}
 main {
-  @apply max-w-5xl my-12 mx-auto px-5;
+  @apply max-w-7xl my-12 mx-auto px-5;
 }
 main > h2 {
   @apply mb-4 pb-2 text-base;
@@ -32,11 +55,11 @@ p > a {
 /* nav styles */
 
 nav {
-  @apply pb-6
+  @apply pb-4
     border-b-2 border-gray-200
     flex justify-between items-center gap-5 
-    my-10 mx-auto 
-    max-w-6xl;
+    my-8 mx-auto 
+    max-w-screen-2xl;
 }
 nav a,
 nav span {
@@ -45,11 +68,8 @@ nav span {
 nav a:hover {
   @apply text-white;
 }
-main nav {
-  @apply border-0;
-}
 
-/* button styles */
+/* button styles
 button {
   @apply px-3 py-2 
     rounded-sm 
@@ -64,22 +84,20 @@ button:hover {
 }
 .btn-secondary {
   @apply bg-gray-200 text-gray-900;
-}
+} */
 
 /* card styles */
 
 .card-container {
-  @apply flex gap-1 flex-wrap justify-center mx-20;
+  @apply grid grid-cols-3 gap-1  my-10;
 }
 
 .card {
   @apply bg-black 
     shadow-sm 
-    max-w-sm
+    max-w-full
     p-0 m-0
+    gap-0
     relative 
-    overflow-hidden
-    flex-nowrap
-
     ease-in-out;
 }

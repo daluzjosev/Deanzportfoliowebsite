@@ -2,8 +2,7 @@ import React from 'react'
 
 export default function Highlightreel() {
     return  (
-        <main className='flex justify-center'>
-            <div className="max-w-screen-sm w-full overflow-hidden my-10">
+            <div className="max-w-screen-xl w-full overflow-hidden my-10">
                 <iframe
                     className='aspect-video'
                     width="100%"
@@ -14,7 +13,6 @@ export default function Highlightreel() {
                     title="Embedded youtube"
                 />
             </div>
-        </main>
         
       )
 }

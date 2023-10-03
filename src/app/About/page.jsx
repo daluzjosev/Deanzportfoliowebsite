@@ -1,11 +1,19 @@
 import React from 'react'
 import Selfie from '@/app/components/Selfie'
+import Link from 'next/link'
 
 export default function About() {
   return (
+    <>
+    <div className="flex-wrap text-center mobile-nav space-x-4 p-0">
+          <Link href={"/"}><p className=''>Work</p></Link>
+          <Link href={"/About"}><p className=''>About</p></Link>
+          
+
+      </div>
     <main>
       <Selfie />
-        <h2 > About </h2>
+        <h2 className='text-center' > About </h2>
 
       <div className=''>
 
@@ -32,6 +40,8 @@ export default function About() {
       </div>
      
     </main>
+    </>
+    
     
   )
 }

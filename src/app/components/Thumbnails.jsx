@@ -12,20 +12,23 @@ export default function Thumbnails() {
   }, []);
 
   return (
+      <div className='card-container grid justify-center'>
+        
+          {videos.map(video => (
+            <div className='card' key={video.id} >
+            <Link 
+            href={`/Videos/${video.id}`
+            
+            
+            }>
+                <Thumbnail video={video} />
+            </Link>
+            </div>
+            
+            
+          ))}
+        </div>
     
-    <div className='card-container'>
-      {videos.map(video => (
-        
-        <Link key={video.id} 
-        href={`/Videos/${video.id}`
-         
-        
-        }>
-            <Thumbnail video={video} />
-        </Link>
-        
-      ))}
-    </div>
   );
  
 }
