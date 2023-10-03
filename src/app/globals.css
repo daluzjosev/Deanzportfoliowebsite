@@ -34,6 +34,9 @@
   .nav-logo {
     display: inline-block; /* Display the icon for mobile */
   }
+  .card-title {
+    display: none;
+  }
 }
 
 /* base styles */
