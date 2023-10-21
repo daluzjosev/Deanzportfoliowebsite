@@ -19,7 +19,7 @@ export default function About() {
       <div className='flex flex-wrap justify-center space-x-5 mt-5'>
       <Image 
               className='object-contain invert'
-              src={"/images/tsmlogo.png"}
+              src={"/Deanzportfoliowebsite/images/tsmlogo.png"}
               alt='Tsm logo'
               width={100}
               height={100}
@@ -27,7 +27,7 @@ export default function About() {
               />
       <Image 
               className='object-contain invert'
-              src={"/images/prxlogo.png"}
+              src={"/Deanzportfoliowebsite/images/prxlogo.png"}
               alt='PRX logo'
               width={100}
               height={100}
@@ -35,7 +35,7 @@ export default function About() {
               />
               <Image 
               className='object-contain invert'
-              src={"/images/flyquestlogo-black.png"}
+              src={"/Deanzportfoliowebsite/images/flyquestlogo-black.png"}
               alt='Tsm logo'
               width={100}
               height={100}
@@ -44,14 +44,14 @@ export default function About() {
               
               <Image 
               className='object-contain invert'
-              src={"/images/darkzero3-black.png"}
+              src={"/Deanzportfoliowebsite/images/darkzero3-black.png"}
               alt='darkzero3 logo'
               width={100}
               height={100}
               
               /><Image 
               className='object-contain invert'
-              src={"/images/aimlab.png"}
+              src={"/Deanzportfoliowebsite/images/aimlab.png"}
               alt='aimlab logo'
               width={100}
               height={100}
@@ -59,7 +59,7 @@ export default function About() {
               />
      <Image 
               className='object-contain invert'
-              src={"/images/gmclogo2-black.png"}
+              src={"/Deanzportfoliowebsite/images/gmclogo2-black.png"}
               alt='gcm logo'
               width={100}
               height={100}
@@ -69,7 +69,7 @@ export default function About() {
               
               <Image 
               className='object-contain invert'
-              src={"/images/logitechlogo.png"}
+              src={"/Deanzportfoliowebsite/images/logitechlogo.png"}
               alt='Logitech logo'
               width={100}
               height={100}
