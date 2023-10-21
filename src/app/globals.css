@@ -41,8 +41,8 @@
 
 /* base styles */
 body {
-  background: #000000;
-  @apply text-gray-500 m-5;
+  background: #002ad7;
+  @apply text-white m-5;
 }
 
 main {
@@ -52,7 +52,7 @@ main > h2 {
   @apply mb-4 pb-2 text-base;
 }
 p > a {
-  @apply text-primary underline;
+  @apply text-primary;
 }
 
 /* nav styles */
@@ -66,10 +66,10 @@ nav {
 }
 nav a,
 nav span {
-  @apply text-gray-500;
+  @apply text-white uppercase;
 }
 nav a:hover {
-  @apply text-white;
+  @apply text-black;
 }
 
 /* button styles

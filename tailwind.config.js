@@ -4,11 +4,14 @@ module.exports = {
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './node_modules/flowbite-react/**/*.js', './pages/**/*.{ts,tsx}', './public/**/*.html'
   ],
+  plugins: [require('flowbite/plugin')],
   theme: {
     extend: {
       colors: {
-        primary: '#000000'
+        primary: '#000000',
+        blue: '#002ad7'
       },
       spacing: {
         '112': '28rem',

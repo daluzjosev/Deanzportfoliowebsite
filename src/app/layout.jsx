@@ -1,5 +1,5 @@
 import './globals.css'
-import { Inter, Rubik, Poppins } from 'next/font/google'
+import { Inter, Rubik, Poppins, } from 'next/font/google'
 // made by Jose Daluz. daluzjosev@gmail.com
 
 // Components
@@ -27,10 +27,7 @@ export default function RootLayout({ children }) {
           
 
           <div className='flex justify-center m-5 pr-5'>
-            <ul className='space-y-4 '>
-              <Contactlist />
-
-            </ul>
+            
           </div>
           <Footer />
 

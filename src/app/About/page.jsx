@@ -1,7 +1,7 @@
 import React from 'react'
 import Selfie from '@/app/components/Selfie'
 import Link from 'next/link'
-
+import Image from 'next/image'
 export default function About() {
   return (
     <>
@@ -13,22 +13,97 @@ export default function About() {
       </div>
     <main>
       <Selfie />
-        <h2 className='text-center' > About </h2>
+      <div className='flex flex-wrap justify-center space-x-5'>
+      <Image 
+              className=''
+              src={"/Deanzportfoliowebsite//images/prxlogo.png"}
+              alt='PRX logo'
+              width={100}
+              height={100}
+              
+              />
+              <Image 
+              className=''
+              src={"/Deanzportfoliowebsite//images/logitechlogo.png"}
+              alt='Logitech logo'
+              width={100}
+              height={100}
+              
+              />
+              <Image 
+              className=''
+              src={"/Deanzportfoliowebsite//images/darkzero3-black.png"}
+              alt='darkzero3 logo'
+              width={100}
+              height={100}
+              
+              />
+     <Image 
+              className=''
+              src={"/Deanzportfoliowebsite//images/gmclogo2-black.png"}
+              alt='gcm logo'
+              width={100}
+              height={100}
+              
+              />
+      <Image 
+              className=''
+              src={"/Deanzportfoliowebsite//images/aimlab.png"}
+              alt='aimlab logo'
+              width={100}
+              height={100}
+              
+              />
+      </div>
+      <div className=' text-lg'>
 
-      <div className=''>
+        <div className='text-justify '>
+          <div className=' p-5 tracking-tighter text-pink-200'>
+              <p className='text-center  italic p-8'>
 
-        <div className='text-justify'>
-          <div className=' py-5'>
-            <p className='text-center italic'>
+                {"Dean Ver Tinio is a visionary editor of digital post-production content." }
 
-              {"Dean Ver Tinio is a visionary editor of digital post-production content." }
 
-          </p> 
-            <br />
-            <p className='text-center'>
-            {"He's been in the digital entertainment world, working with all kinds of content. He's teamed up with YouTube stars and big esports names like TSM (Team Solo Mid) and PRX. His specialty? Making fun videos and doing cool 3D stuff. He's a video pro who takes big ideas and turns them into awesome visuals."}
-            </p>
+              </p> 
+              <div className='flex justify-center'>
+              <Image 
+              className=''
+              src={"/Deanzportfoliowebsite//images/tsmlogo.png"}
+              alt='Tsm logo'
+              width={250}
+              height={250}
+              
+              />
+              
+              </div>
+             
+              <p className='text-center italic p-8 text-pink-100'>
+              {"2021 Nominated “2021 Best Video Prod Team of the Year”, Esports Awards (TSM)" } 
+              
+              </p>
+              <div className='flex justify-center'>
+              <Image 
+              className=''
+              src={"/Deanzportfoliowebsite//images/flyquestlogo-black.png"}
+              alt='Tsm logo'
+              width={250}
+              height={250}
+              
+              />
+              
+              </div>
+              <p className='text-center italic p-8 text-pink-50'>
+              {"2023 Nominated “2023 Best Video Prod Team of the Year”, Esports Awards (Flyquest)" }
+              
+              </p>
+              <br />
+              
           </div>
+
+          <p className='text-center'>
+              {"He has worked with various types of content in the digital entertainment industry. He worked with multiple youtube celebrities and big branded esports organizations with the likes of PRX, TSM, Flyquest, Darkzero, Cody Ko, Logitech, GMC, Aimlabs."}
+              </p>
+
           <div className='py-5 text-center'>
             <h2 className='m-5'>Transforming Videos into Entertainment <span className='text-yellow-400'>Gold</span> </h2>
             <p>
