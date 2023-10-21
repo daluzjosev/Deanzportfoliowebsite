@@ -11,7 +11,8 @@ module.exports = {
     extend: {
       colors: {
         primary: '#000000',
-        blue: '#002ad7'
+        blue: '#002ad7',
+        pink: '#F8BDEB'
       },
       spacing: {
         '112': '28rem',

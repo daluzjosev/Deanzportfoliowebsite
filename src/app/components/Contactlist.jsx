@@ -7,7 +7,7 @@ export default function Contactlist() {
             <a target='_blank' href="https://twitter.com/iamdeanzz">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
+                    className="h-7 w-7"
                     fill="currentColor"
                     viewBox="0 0 24 24">
                     <path
@@ -19,7 +19,7 @@ export default function Contactlist() {
             <a target='_blank' href="https://www.linkedin.com/in/deanvertinio/">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
+                    className="h-7 w-7"
                     fill="currentColor"
                     viewBox="0 0 24 24">
                     <path

@@ -13,9 +13,11 @@ export default function Navbar() {
     <nav>
       
         
-        <div className='flex'>
+        <div className='flex space-x-4'>
         <Link href={"/"}> <h1 className='text-5xl nav-title'>Dean Ver Tinio</h1></Link>
-        
+        <ul className='flex space-x-2 mt-3 card-title'>
+            <Contactlist/>
+        </ul>
         </div>
         <div  className='flex pl-3'>
         <Link href={"/"}><Image className='nav-logo' src="/Deanzportfoliowebsite/images/android-chrome-512x512.png" width={60} height={60} alt="icon" /></Link>
@@ -26,9 +28,7 @@ export default function Navbar() {
 
           <Navlinks />
 
-          <ul className='flex space-x-2 mt-2 card-title'>
-            <Contactlist/>
-            </ul>
+          
         </div>
         
     </nav>
