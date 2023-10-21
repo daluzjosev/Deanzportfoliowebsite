@@ -32,10 +32,14 @@
     display: none; /* Hide the text for mobile */
   }
   .nav-logo {
-    display: inline-block; /* Display the icon for mobile */
+    /* Display the icon for mobile */
   }
   .card-title {
     display: none;
+  }
+  nav {
+    justify-content: center;
+    @apply flex justify-center;
   }
 }
 
@@ -64,10 +68,7 @@ nav {
     my-8 mx-auto 
     max-w-screen-2xl;
 }
-nav a,
-nav span {
-  @apply text-white uppercase;
-}
+
 nav a:hover {
   @apply text-black;
 }
