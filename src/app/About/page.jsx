@@ -19,7 +19,7 @@ export default function About() {
       <div className='flex flex-wrap justify-center space-x-5 mt-5'>
       <Image 
               className='object-contain invert'
-              src={"/images/tsmlogo.png"}
+              src={"images/tsmlogo.png"}
               alt='Tsm logo'
               width={100}
               height={100}
