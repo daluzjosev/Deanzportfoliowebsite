@@ -1,11 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
 
-
 export default function Thumbnail({ video }) {
+
   return (
     <>
       <div className="card group text-center relative  block max-w-xs mx-auto ">
+        
           <Image 
           className='
           group-hover:blur-[2px] duration-300
