@@ -20,7 +20,7 @@ export default function Navbar() {
         </ul>
         </div>
         <div  className='flex pl-3'>
-        <Link href={"/"}><Image className='nav-logo' src="/Deanzportfoliowebsite/images/android-chrome-512x512.png" width={60} height={60} alt="icon" /></Link>
+        <Link href={"/"}><Image className='nav-logo' src="/images/android-chrome-512x512.png" width={60} height={60} alt="icon" /></Link>
 
       </div>
         <div className="flex">
