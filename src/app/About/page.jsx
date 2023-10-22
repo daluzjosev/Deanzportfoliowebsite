@@ -1,5 +1,4 @@
 import React from 'react'
-import Selfie from '@/app/components/Selfie'
 import Link from 'next/link'
 import Image from 'next/image'
 import Contactlist from '../components/Contactlist'
@@ -27,7 +26,7 @@ export default function About() {
               />
       <Image 
               className='object-contain invert'
-              src={"/Deanzportfoliowebsite/images/prxlogo.png"}
+              src={"images/prxlogo.png"}
               alt='PRX logo'
               width={100}
               height={100}
@@ -35,7 +34,7 @@ export default function About() {
               />
               <Image 
               className='object-contain invert'
-              src={"/Deanzportfoliowebsite/images/flyquestlogo-black.png"}
+              src={"images/flyquestlogo-black.png"}
               alt='Tsm logo'
               width={100}
               height={100}
@@ -44,14 +43,14 @@ export default function About() {
               
               <Image 
               className='object-contain invert'
-              src={"/Deanzportfoliowebsite/images/darkzero3-black.png"}
+              src={"images/darkzero3-black.png"}
               alt='darkzero3 logo'
               width={100}
               height={100}
               
               /><Image 
               className='object-contain invert'
-              src={"/Deanzportfoliowebsite/images/aimlab.png"}
+              src={"images/aimlab.png"}
               alt='aimlab logo'
               width={100}
               height={100}
@@ -59,7 +58,7 @@ export default function About() {
               />
      <Image 
               className='object-contain invert'
-              src={"/Deanzportfoliowebsite/images/gmclogo2-black.png"}
+              src={"images/gmclogo2-black.png"}
               alt='gcm logo'
               width={100}
               height={100}
@@ -69,7 +68,7 @@ export default function About() {
               
               <Image 
               className='object-contain invert'
-              src={"/Deanzportfoliowebsite/images/logitechlogo.png"}
+              src={"images/logitechlogo.png"}
               alt='Logitech logo'
               width={100}
               height={100}
